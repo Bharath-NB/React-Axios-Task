@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useUserContext } from "./context/usercontext";
 import Footer from "./Footer";
-// import axios from "axios";
 
 function ListPages() {
   const { data, handleDelete, handleUpdate } = useUserContext();
@@ -93,7 +92,7 @@ function ListPages() {
                     <button
                       type="button"
                       className="btn text-white mt-2 me-4 px-3"
-                      style={{backgroundColor:"#1f3265"}}
+                      style={{backgroundColor:"#03a61c"}}
                       onClick={() => handleEditClick(user)}
                     >
                       Edit

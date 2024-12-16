@@ -1,4 +1,3 @@
-// import React from "react";
 import { useUserContext } from "./context/usercontext";
 
 function Home() {
@@ -15,10 +14,12 @@ function Home() {
       ></video>
 
         </div>
-        <div className="col-md-10 mx-auto col-lg-7">
-            <h2 className="display-4 fw-bold lh-1 text-white mb-4">
-              Enter Your <span className="text-danger">Data</span>
-            </h2>
+        <div 
+  className="col-md-10 mx-auto col-lg-7" 
+  style={{ backgroundColor: 'rgba(92, 105, 94, 0.8)' }}>
+  <h2 className="display-4 fw-bold lh-1 text-white mb-4">
+    Enter Your <span className="text-danger">Data</span>
+  </h2>
           <form
             className="p-4 p-md-5 mb-5 border rounded bg-light"
             onSubmit={(e) => handleFormSubmit(e, { name, email, phone }, formId)}
